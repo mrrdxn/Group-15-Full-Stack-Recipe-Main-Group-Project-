@@ -125,13 +125,13 @@ Run `make help` to list everything.
 
 | Name | Role | GitHub |
 | ---- | ---- | ------ |
-| Mensah Stephen Tetteh (11165084)_ | _e.g. Backend_ | [@mrrdxn](https://github.com/mrrdxn) |
-| Richard Nana Kwame Boham (22378694)| _e.g. Mobile_ | _link_ |
-| Emmanuel Niah (22273456)| _e.g. Mobile_ | _link_ |
-| Kevin Owusu Oduro (22397341)| _e.g. Mobile_ | _link_ |
-| Joseph Osei Owusu (22389021) | _e.g. Mobile_ | _link_ |
-| Agnes Amponsah Owusuaa (22242223)| _e.g. Mobile_ | _link_ |
-| Kenneth Godson Setorglo (22497350)| _e.g. Mobile_ | _link_ |
+| Mensah Stephen Tetteh (11165084)_ |Architecture and Context Lead| [@mrrdxn](https://github.com/mrrdxn) |
+| Richard Nana Kwame Boham (22378694)| Product/Client Manager & Documentation/Evidence Lead| _link_ |
+| Emmanuel Niah (22273456)| QA / Validation Lead | _link_ |
+| Kevin Owusu Oduro (22397341)| DevOps / Release Lead| _link_ |
+| Joseph Osei Owusu (22389021) | Implementation Lead| _link_ |
+| Agnes Amponsah Owusuaa (22242223)| UX / Research Lead | _link_ |
+| Kenneth Godson Setorglo (22497350)| Implementation Lead| _link_ |
 
 ## Contributing
 
