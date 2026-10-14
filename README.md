@@ -133,13 +133,7 @@ Run `make help` to list everything.
 | Agnes Amponsah Owusuaa (22242223)| UX / Research Lead| 
 | Kenneth Godson Setorglo (22497350)| Implementation Lead| [@kenismy1]
 
-## Contributing
 
-1. Create a branch: `git checkout -b feature/your-feature`
-2. Commit your changes: `git commit -m "Describe your change"`
-3. Push and open a pull request into `main`
-
-Never commit `.env` files or secrets.
 
 ## License
 
