@@ -1,9 +1,13 @@
 import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 import { ENV } from "./config/env.js";
 import { db } from "./config/db.js";
 import { favoritesTable } from "./db/schema.js";
 import { and, eq } from "drizzle-orm";
 import job from "./config/cron.js";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const PORT = ENV.PORT || 5001;
@@ -11,14 +15,6 @@ const PORT = ENV.PORT || 5001;
 if (ENV.NODE_ENV === "production") job.start();
 
 app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.status(200).send(`
-    <h1>Recipe App API 🍳</h1>
-    <p>The server is running.</p>
-    <p><a href="/api/health">Check health</a></p>
-  `);
-});
 
 app.get("/api/health", (req, res) => {
   res.status(200).json({ success: true });
@@ -82,6 +78,17 @@ app.delete("/api/favorites/:userId/:recipeId", async (req, res) => {
     console.log("Error removing a favorite", error);
     res.status(500).json({ error: "Something went wrong" });
   }
+});
+
+// Serve the web build of the app (must come after the API routes)
+const publicDir = path.join(__dirname, "..", "public");
+app.use(express.static(publicDir, { extensions: ["html"] }));
+
+app.use((req, res, next) => {
+  if (req.method === "GET" && !req.path.startsWith("/api")) {
+    return res.sendFile(path.join(publicDir, "index.html"));
+  }
+  next();
 });
 
 app.listen(PORT, () => {
