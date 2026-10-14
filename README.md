@@ -84,8 +84,7 @@ cp backend/.env.example backend/.env
 cp mobile/.env.example mobile/.env
 ```
 
-Fill in your Clerk publishable key as shown in `mobile/.env.example`.
-Then set the API address in `mobile/constants/api.js`. On a physical phone, use your computer's local network IP (for example `http://192.168.1.20:5001/api`), not `localhost`.
+pk_test_bmF0aW9uYWwtY2F0dGxlLTg3MzIuY2xlcmsuYWNjb3VudHMuZGV2JA
 
 ### 3. Set up the database
 
