@@ -12,6 +12,14 @@ if (ENV.NODE_ENV === "production") job.start();
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.status(200).send(`
+    <h1>Recipe App API 🍳</h1>
+    <p>The server is running.</p>
+    <p><a href="/api/health">Check health</a></p>
+  `);
+});
+
 app.get("/api/health", (req, res) => {
   res.status(200).json({ success: true });
 });
