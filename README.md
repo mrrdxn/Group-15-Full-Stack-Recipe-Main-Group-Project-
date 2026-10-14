@@ -126,12 +126,12 @@ Run `make help` to list everything.
 | Name | Role | GitHub |
 | ---- | ---- | ------ |
 | Mensah Stephen Tetteh (11165084)_ |Architecture and Context Lead| [@mrrdxn](https://github.com/mrrdxn) |
-| Richard Nana Kwame Boham (22378694)| Product/Client Manager & Documentation/Evidence Lead
+| Richard Nana Kwame Boham (22378694)| Product/Client Manager & Documentation/Evidence Lead| [@Chronomystical]
 | Emmanuel Niah (22273456)| QA / Validation Lead 
 | Kevin Owusu Oduro (22397341)| DevOps / Release Lead
 | Joseph Osei Owusu (22389021) | Implementation Lead
-| Agnes Amponsah Owusuaa (22242223)| UX / Research Lead 
-| Kenneth Godson Setorglo (22497350)| Implementation Lead
+| Agnes Amponsah Owusuaa (22242223)| UX / Research Lead| 
+| Kenneth Godson Setorglo (22497350)| Implementation Lead| [@kenismy1]
 
 ## Contributing
 
